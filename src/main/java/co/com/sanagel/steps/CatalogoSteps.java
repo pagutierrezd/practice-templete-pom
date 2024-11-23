@@ -27,13 +27,13 @@ public class CatalogoSteps {
         seleccionClick(InicioPageObject.getBtnAmor());
 
         ArrayList<Map<String, String>> dataExcel;
-        try{
+        try {
             dataExcel = DatosExcel.leerDatosDeHojaDeExcel("parametros/Datos.xlsx", "Facturacion");
 
             esperarElementoVisible(CategoriaPageObject.getBtnProducto(dataExcel.get(0).get("Producto")), Duration.ofSeconds(15));
             clickJavaScript(CategoriaPageObject.getBtnProducto(dataExcel.get(0).get("Producto")));
 
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
