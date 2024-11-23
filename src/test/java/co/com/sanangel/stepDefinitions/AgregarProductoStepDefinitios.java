@@ -18,8 +18,8 @@ public class AgregarProductoStepDefinitios {
     @Steps
     ValidacionSteps validacionSteps = new ValidacionSteps();
 
-    @Dado("Estoy en el menu de categorias de productos de SanAngel")
-    public void estoyEnElMenuDeCategoriasDeProductosDeSanAngel() {
+    @Dado("Me encuentro en la pagina de SanAngel")
+    public void meEncuentroEnLaPaginaDeSanAngel() {
 
         SeleniumWebDriver.chromeDrive("https://sanangel.com.co/");
     }

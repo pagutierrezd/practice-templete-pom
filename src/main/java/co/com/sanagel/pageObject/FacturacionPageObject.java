@@ -18,7 +18,9 @@ public class FacturacionPageObject {
 
     private static By optCiudad = By.xpath("//select[@id='order_ciudad']");
 
-    public static By getBtnCiudad(String textoCiudad) { return By.xpath("//option[@value='" + textoCiudad + "']"); }
+    public static By getBtnCiudad(String textoCiudad) {
+        return By.xpath("//option[@value='" + textoCiudad + "']");
+    }
 
     private static By txtDireccionQuienRecibo = By.xpath("//input[@name='order_additional_address']");
 
@@ -36,29 +38,53 @@ public class FacturacionPageObject {
         return txtNombre;
     }
 
-    public static By getTxtApellido() { return txtApellido; }
+    public static By getTxtApellido() {
+        return txtApellido;
+    }
 
-    public static By getTxtCedula() { return txtCedula; }
+    public static By getTxtCedula() {
+        return txtCedula;
+    }
 
-    public static By getTxtTelefono() { return txtTelefono; }
+    public static By getTxtTelefono() {
+        return txtTelefono;
+    }
 
-    public static By getTxtEmail() { return txtEmail; }
+    public static By getTxtEmail() {
+        return txtEmail;
+    }
 
-    public static By getTxtNombreCompletoQuienRecibe() { return txtNombreCompletoQuienRecibe; }
+    public static By getTxtNombreCompletoQuienRecibe() {
+        return txtNombreCompletoQuienRecibe;
+    }
 
-    public static By getOptCiudad() { return optCiudad; }
+    public static By getOptCiudad() {
+        return optCiudad;
+    }
 
-    public static By getTxtDireccionQuienRecibo() { return txtDireccionQuienRecibo; }
+    public static By getTxtDireccionQuienRecibo() {
+        return txtDireccionQuienRecibo;
+    }
 
-    public static By getTxtInfoAdicionalQuienRecibe() { return txtInfoAdicionalQuienRecibe; }
+    public static By getTxtInfoAdicionalQuienRecibe() {
+        return txtInfoAdicionalQuienRecibe;
+    }
 
-    public static By getTxtTelefonoQuienRecibe() { return txtTelefonoQuienRecibe; }
+    public static By getTxtTelefonoQuienRecibe() {
+        return txtTelefonoQuienRecibe;
+    }
 
-    public static By getTxtMensajeQuienRecibe() { return txtMensajeQuienRecibe; }
+    public static By getTxtMensajeQuienRecibe() {
+        return txtMensajeQuienRecibe;
+    }
 
-    public static By getTxtFirmaQuienRecibe() { return txtFirmaQuienRecibe; }
+    public static By getTxtFirmaQuienRecibe() {
+        return txtFirmaQuienRecibe;
+    }
 
-    public static By getLblFacturacion(){ return lblFacturacion; }
+    public static By getLblFacturacion() {
+        return lblFacturacion;
+    }
 
     private FacturacionPageObject() {
     }

@@ -37,7 +37,7 @@ public class FacturacionSteps {
             escrituraTexto(FacturacionPageObject.getTxtTelefonoQuienRecibe(), dataExcel.get(0).get("CelularQuienRecibe"));
             escrituraTexto(FacturacionPageObject.getTxtMensajeQuienRecibe(), dataExcel.get(0).get("ObservacionQuienRecibe"));
             escrituraTexto(FacturacionPageObject.getTxtFirmaQuienRecibe(), dataExcel.get(0).get("FirmaQuienRecibe"));
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
