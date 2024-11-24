@@ -10,6 +10,8 @@ public class CuentaPageObject {
 
     private static By btnIniciarSesion = By.xpath("//button[@name='login']");
 
+    private static By lblValidarInicioSesion = By.xpath("//*[@id='post-197']//strong[1]");
+
     public static By getTxtEmail() {
         return txtEmail;
     }
@@ -20,6 +22,10 @@ public class CuentaPageObject {
 
     public static By getBtnIniciarSesion() {
         return btnIniciarSesion;
+    }
+
+    public static By getLblValidarInicioSesion() {
+        return lblValidarInicioSesion;
     }
 
     private CuentaPageObject() {
